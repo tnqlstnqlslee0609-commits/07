@@ -1,18 +1,17 @@
 #include <stdio.h>
-
-int counter;
-
-void set_counter(void)
-{
-    counter = 20;
-}
+void f(void);
+int i;
 
 int main(void)
 {
-    printf("counter=%d\n", counter);
-    set_counter();
-    printf("counter=%d\n", counter);
+    int i;
+    for(i=0;i<5;i++)
+        f();
+}
 
-    return 0;
-
+void f(void)
+{
+    int i;
+    for (i=0;i<10;i++)
+         printf("#");
 }
